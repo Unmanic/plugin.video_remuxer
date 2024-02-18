@@ -31,4 +31,6 @@ jobs:
     - name: Generate PR for official repo
       uses: Josh5/action-open-pr-in-official-unmanic-repo@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        dst_repo: Unmanic/unmanic-plugins
+        dst_branch_name: official
+        github_token: ${{ secrets.GH_TOKEN }}
