@@ -14,7 +14,7 @@ jobs:
 
     # Execute plugin repo gen action
     - name: Build and publish plugin
-      uses: Josh5/action-build-and-publish-unmanic-plugin@master
+      uses: Unmanic/action.build-and-publish-unmanic-plugin@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -29,9 +29,9 @@ jobs:
 
     # Execute PR generation action
     - name: Generate PR for official repo
-      uses: Josh5/action-open-pr-in-official-unmanic-repo@master
+      uses: Unmanic/action.open-pr-to-unmanic-repo@master
       with:
-        dst_repo: Josh5/unmanic-plugins
+        dst_repo: Unmanic/unmanic-plugins
         pr_repo: Unmanic/unmanic-plugins
         pr_repo_branch_name: official
         github_token: ${{ secrets.GH_TOKEN }}
