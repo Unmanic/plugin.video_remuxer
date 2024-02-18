@@ -1,0 +1,19 @@
+name: Automatically build and publish this plugin
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+
+  build-and-publish-plugin:
+    runs-on: ubuntu-latest
+    name: Build and publish plugin
+    steps:
+
+    # Execute plugin repo gen action
+    - name: Generate and Deploy Unmanic Plugin Repository
+      uses: Josh5/action-build-and-publish-unmanic-plugin@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
