@@ -1,0 +1,30 @@
+{
+    "repo": {
+        "id": "repository.tmp",
+        "name": "Build Repo",
+        "icon": "",
+        "repo_data_directory": "https://raw.githubusercontent.com//repo/",
+        "repo_data_url": "https://raw.githubusercontent.com//repo/repo.json"
+    },
+    "plugins": [
+        {
+            "author": "Josh.5",
+            "compatibility": [
+                1,
+                2
+            ],
+            "description": "Remux a video file to the configured container",
+            "icon": "https://raw.githubusercontent.com/Josh5/unmanic.plugin.video_remuxer/master/icon.png",
+            "id": "video_remuxer",
+            "name": "Remux Video Files",
+            "platform": [
+                "all"
+            ],
+            "priorities": {
+                "on_worker_process": 3
+            },
+            "tags": "video,ffmpeg",
+            "version": "0.0.13"
+        }
+    ]
+}
